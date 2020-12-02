@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Words</string>
+    <string name="menu_item_list_of_words">Список слов</string>
+    <string-array name="parts_of_speech">
+        <item>Существительные</item>
+        <item>Прилагательные</item>
+        <item>Местоимения</item>
+        <item>Глаголы</item>
+        <item>Наречия</item>
+        <item>Предлоги</item>
+        <item>Фразы</item>
+    </string-array>
+    <string name="add_english_word">Английское слово…</string>
+    <string name="and_translation">Перевод</string>
+    <string name="category">Категория</string>
+    <string name="add_to_database">Добавить в базу</string>
+    <string name="ok">Ок</string>
+</resources>
