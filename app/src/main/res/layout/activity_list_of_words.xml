@@ -25,8 +25,9 @@
         android:onClick="onClickAddWordInList"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/plus_64"
-        android:focusable="true" />
+        app:srcCompat="@drawable/plus_100"
+        android:focusable="true"
+        android:contentDescription="@string/description_add_word" />
 
     <LinearLayout
         android:id="@+id/container"
