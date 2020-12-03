@@ -36,7 +36,6 @@ public class ListOfWordsActivity extends AppCompatActivity {
         LiveData<List<Word>> words = viewModel.getWords();
         words.observe(this, words1 -> adapter.setWords(words1));
         recyclerView.setAdapter(adapter);
-        dialogFragmentAddWord = new AddWordDialog();
         adapter.setOnClickDeleteWord(position -> {
             Word word = adapter.getWords().get(position);
             viewModel.deleteWord(word);
@@ -44,11 +43,12 @@ public class ListOfWordsActivity extends AppCompatActivity {
         adapter.setOnClickChangeWord(position -> {
             Word word = adapter.getWords().get(position);
             dialogFragmentChangeWord = new ChangeWordDialog(word);
-            dialogFragmentChangeWord.show(getSupportFragmentManager(),"dialogFragmentChangeWord");
+            dialogFragmentChangeWord.show(getSupportFragmentManager(), "dialogFragmentChangeWord");
         });
     }
 
     public void onClickAddWordInList(View view) {
+        dialogFragmentAddWord = new AddWordDialog();
         dialogFragmentAddWord.show(getSupportFragmentManager(), "dialogFragmentAddWord");
     }
 }
